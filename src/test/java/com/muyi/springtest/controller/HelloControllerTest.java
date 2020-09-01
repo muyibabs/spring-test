@@ -32,6 +32,7 @@ class HelloControllerTest {
     void helloWithParams() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("/hello?name=Muyi"))
                 .andExpect(MockMvcResultMatchers.content().string("Hello Muyi"));
+
     }
 
 }
